@@ -7,6 +7,7 @@ module.exports = {
         fraunces: ["'Fraunces'", "sans-serif"],
         manrope: ["'Manrope'", "sans-serif"],
         playfair: ["'Playfair'", "sans-serif"],
+        abrilfatface: ["'Abril Fatface'", "sans-serif"],
       },
       colors: {
         mygreen: "#43FEA3",
