@@ -15,6 +15,7 @@ module.exports = {
       },
       screens: {
         iphone: "375px",
+        w541: "541px",
       },
     },
   },
