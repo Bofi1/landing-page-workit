@@ -1,13 +1,25 @@
+<!-- notes -->
+<!-- https://docs.google.com/spreadsheets/d/1nL3eIannqVo-xf1y2R8x_9aeSbcVS7QNc7KZAODq7I8/edit?usp=sharing -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Workit is a modern platform that helps you analyze and optimize your product data with AI-powered insights."
+    />
     <title>Workit</title>
     <link rel="stylesheet" href="output.css" />
+    <link rel="icon" href="images/icon.png" />
   </head>
   <body class="font-manrope">
-    <nav class="w-full flex justify-between bg-mypurple p-8 xl:p-16">
+    <nav
+      class="w-full flex justify-between bg-mypurple p-8 xl:p-16 pb-0 xl:pb-0"
+      role="navigation"
+      aria-label="Main navigation"
+    >
       <img src="images/logo-light.svg" alt="logo" />
       <p
         class="border-b-2 border-[#53F5A9] first-letter text-white font-bold text-base"
@@ -21,14 +33,29 @@
         class="relative bg-mypurple text-white overflow-hidden h-[60vh] flex flex-col items-center justify-center"
       >
         <div
-          class="flex flex-col justify-center items-center px-5 mb-[8rem] md:mb-[10rem]"
+          class="flex flex-col justify-center items-center px-5 mb-[8rem] md:mb-[8rem]"
         >
+          <img
+            class="absolute left-[-7rem] top-[1rem] hidden md:flex"
+            src="images/bg-pattern-1.svg"
+            alt="decoration-1"
+            loading="lazy"
+            aria-hidden="true"
+          />
+          <img
+            class="absolute right-[-3rem] top-[15rem] hidden md:flex"
+            src="images/bg-pattern-2.svg"
+            alt="decoration-2"
+            loading="lazy"
+            aria-hidden="true"
+          />
+
           <h1
             class="font-abrilfatface text-[2.5rem] text-center md:text-5xl xl:text-6xl"
           >
             Data <span class="border-b-2 border-mygreen">tailored</span> to
             <br />
-            <p class="md:mt-6">your needs.</p>
+            <div class="md:pt-10">your needs.</div>
           </h1>
           <button
             class="px-8 py-4 bg-mygreen mt-6 text-mypurple font-bold md:mt-10"
@@ -41,6 +68,7 @@
           class="absolute bottom-0 left-0 w-full h-40"
           viewBox="0 0 1440 310"
           preserveAspectRatio="none"
+          aria-hidden="true"
         >
           <path
             fill="#FBF8FE"
@@ -50,20 +78,21 @@
       </article>
 
       <img
-        class="absolute top-[60vh] flex justify-self-center w-[20rem] z-[10000000] md:w-[40rem] md:top-[55vh]"
+        class="absolute top-[55vh] flex justify-self-center w-[20rem] z-[10000000] md:w-[30rem] xl:w-[35rem]"
         src="images/image-hero.webp"
-        alt=""
+        alt="phone"
+        loading="lazy"
       />
     </section>
 
-    <main class="">
+    <main role="main">
       <article
         class="relative pt-[9rem] pb-[6rem] bg-mypurplelight text-white overflow-hidden flex flex-col justify-center items-start px-10 md:pt-[14rem] xl:flex-row xl:pt-[16rem] xl:pb-[14rem] xl:items-start"
       >
         <div
           class="flex flex-col justify-center items-center text-mypurple md:flex-row xl:flex-col"
         >
-          <div class="">
+          <div>
             <div
               class="bg-mypurplelight border-2 border-mypurple rounded-full w-14 h-14 flex justify-center items-center text-xl text-black font-abrilfatface md:mr-10 xl:mr-0"
             >
@@ -86,7 +115,7 @@
         <div
           class="flex flex-col justify-center items-center text-mypurple md:flex-row mt-16 xl:mt-0 xl:flex-col"
         >
-          <div class="">
+          <div>
             <div
               class="bg-mypurplelight border-2 border-mypurple rounded-full w-14 h-14 flex justify-center items-center text-xl text-black font-abrilfatface md:mr-10 xl:mr-0"
             >
@@ -110,7 +139,7 @@
         <div
           class="flex flex-col justify-center items-center text-mypurple md:flex-row mt-16 xl:mt-0 xl:flex-col"
         >
-          <div class="">
+          <div>
             <div
               class="bg-mypurplelight border-2 border-mypurple rounded-full w-14 h-14 flex justify-center items-center text-xl text-black font-abrilfatface md:mr-10 xl:mr-0"
             >
@@ -135,6 +164,7 @@
           class="absolute bottom-0 left-0 w-full h-40"
           viewBox="0 0 1440 310"
           preserveAspectRatio="none"
+          aria-hidden="true"
         >
           <path
             fill="#ffffff"
@@ -152,17 +182,18 @@
           <img
             class="relative top-[4rem] md:w-[300px] md:top-[7rem] xl:w-[450px] xl:top-[10rem]"
             src="images/image-founder.webp"
-            alt=""
+            alt="founder"
+            loading="lazy"
           />
         </div>
         <div
           class="bg-mypurple flex flex-col justify-center items-center px-8 py-12 mx-4 z-[8888] md:w-[500px] md:h-[350px] md:items-start md:px-13 md:py-17 md:ml-[12rem] xl:w-[650px] relative xl:bottom-[8rem] xl:left-[5rem]"
         >
-          <h5
+          <h2
             class="font-abrilfatface text-center text-2xl md:text-start md:text-4xl"
           >
             Be the first to test
-          </h5>
+          </h2>
           <p class="text-center mt-10 md:text-start">
             Hi, I´m Louis Graham, the founder of the company. Book a demo call
             with me to become a beta tester for our app and kickstar your
@@ -170,7 +201,10 @@
             call
           </p>
           <div>
-            <button class="px-8 py-4 bg-mygreen mt-10 text-mypurple font-bold">
+            <button
+              class="px-8 py-4 bg-mygreen mt-10 text-mypurple font-bold"
+              type="button"
+            >
               Apply for access
             </button>
           </div>
@@ -178,12 +212,51 @@
       </div>
     </section>
 
-    <footer class="flex flex-col justify-center items-center py-[4rem]">
-      <div><img src="images/logo-dark.svg" alt="" /></div>
+    <footer
+      class="flex flex-col justify-center items-center py-[4rem]"
+      role="contentinfo"
+      aria-label="Footer"
+    >
+      <div>
+        <img src="images/logo-dark.svg" alt="logo-dark" loading="lazy" />
+      </div>
       <div class="flex mt-14">
-        <img class="mr-6" src="images/icon-facebook.svg" alt="" />
-        <img class="mr-6" src="images/icon-twitter.svg" alt="" />
-        <img src="images/icon-instagram.svg" alt="" />
+        <a
+          href="https://facebook.com"
+          aria-label="Facebook"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            class="mr-6"
+            src="images/icon-facebook.svg"
+            alt="fb-logo"
+            loading="lazy"
+          />
+        </a>
+
+        <a
+          href="https://twitter.com"
+          aria-label="Twitter"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            class="mr-6"
+            src="images/icon-twitter.svg"
+            alt="tw-logo"
+            loading="lazy"
+          />
+        </a>
+
+        <a
+          href="https://instagram.com"
+          aria-label="Instagram"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="images/icon-instagram.svg" alt="ig-logo" loading="lazy" />
+        </a>
       </div>
     </footer>
   </body>
